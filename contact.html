@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(RGB(0,0,198), RGB(47,180,213)); /* Updated green gradient */
+  font-family: Arial, sans-serif;
+font-size:20px;
+}
+
+.container {
+  width: 50%;
+  border: 2px solid #e6e6e6; /* Light grey border for a softer look with green */
+  box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.left-panel, .right-panel {
+  padding: 20px;
+  flex: 1;
+}
+
+.left-panel {
+  background-color: #f0f4f7; /* Lighter shade for contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-panel {
+  background-color: white;
+display:flex;
+justify-content:center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color:blue;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #388E3C; /* Darker green on hover */
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="left-panel">
+    <div class="title">Contact Us Now!!</div>
+    
+  </div>
+  <div class="right-panel">
+    <form action="https://script.google.com/macros/s/AKfycbx7R4DaXfJMTHayroWRicV8LBQ3x2ull2tdgJL1LOSyjaWAFcBrMPyVdmsNmztaScXVMg/exec" method="post">
+
+      <label for="name"><b>Name</b></label>
+      <input type="text" id="name" name="name" placeholder="Enter Your Name">
+
+      <label for="email"><b>Email-ID</b></label>
+      <input type="text" id="email" name="email" placeholder="Enter Your Email Id">
+
+<label for="contact"><b>Contact Number</b></label>
+      <input type="text" id="contact" name="contact" placeholder="Enter Your Contact">
+
+      <button type="submit" style="margin-left:140px;" onclick="alert('We Will Contact You Soon')">Submit</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
